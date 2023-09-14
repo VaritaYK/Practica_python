@@ -2,11 +2,11 @@ class Cuenta():
     def __init__(self,saldo):
         self.saldo = saldo
         
-    def interes(self,interes):
+    def interes(self):
         if saldo < 10000 :
             saldo = saldo * (1 + 0.03)
         else:
             saldo = saldo * (1*0.04)
             
     def imprimirSaldo(self):
-        print(f"Nuevo saldo: ${saldo}")
+        print(f"Nuevo saldo: {self.saldo}")
